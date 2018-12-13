@@ -1,0 +1,88 @@
+<ion-content>
+  <div class="background">
+    <img class="frame" src="assets/imgs/frame-aperitivo.png">
+    <a (click)="menuClicked()"><img class="menu-icon" src="assets/imgs/icon-menu.png"></a>
+    <div class="leading">
+      <p>utiliza una copa y ll&eacute;nala con hielo.</p>
+    </div>
+    <div class="question">
+      <p>¿cu&aacute;l es el primer paso para prepararar un aperol spritz?</p>
+    </div>
+    <div class="logo-aperol-bottle">
+      <img class="yellow-circle" src="assets/imgs/yellow-circle.png">
+      <img class="logo-bottle" src="assets/imgs/aperol-bottle.png">
+    </div>
+  </div>
+  <div class="answer-section">
+      <button
+        [disabled]="isEnabled" 
+        (click)="firstOptionChecked()"
+        [style.backgroundColor]="checkedFirstOptionBackgroundColor"
+        [style.color]="checkedFirstOptionTextColor"
+        ion-button class="btn-answer">2 partes de aperol
+      </button>
+      <button
+        [disabled]="isEnabled" 
+        (click)="secondOptionChecked()"
+        [style.backgroundColor]="checkedSecondOptionBackgroundColor"
+        [style.color]="checkedSecondOptionTextColor"
+        ion-button class="btn-answer">2 partes de cinzano prosecco
+      </button>
+      <button
+        [disabled]="isEnabled" 
+        (click)="thirdOptionChecked()" 
+        [style.backgroundColor]="checkedThirdOptionBackgroundColor"
+        [style.color]="checkedThirdOptionTextColor"
+        ion-button class="btn-answer">1 toque de agua c/gas
+      </button>
+      <button
+        [disabled]="isEnabled" 
+        (click)="fourthOptionChecked()" 
+        [style.backgroundColor]="checkedFourthOptionBackgroundColor"
+        [style.color]="checkedFourthOptionTextColor"
+        ion-button class="btn-answer">agregar una rodaja de naranja
+      </button>
+  </div>
+  <div class="after-response">
+      <hr>
+      <button 
+        [disabled]="!isEnabled"
+        (click)="changeIntoPageTwo()" 
+        [style.backgroundColor]="enabledBackgroundColor"
+        [style.color]="enabledTextColor"
+        ion-button class="btn-siguiente" 
+        clear>siguiente
+      </button>
+  </div>
+  <div class= "right-answer" *ngIf="rightanswer">
+    <a (click)="closePopUpRightAnswerMessage()">
+    <div class="opaque-layout">
+    </div>
+    <div class="right-answer-rectangle">
+      <img class="right-answer-image" src="assets/imgs/right-answer.png">
+      <p class="right">¡correcto!</p>
+    </div>
+    </a>
+  </div>
+  <div class= "wrong-answer" *ngIf="wronganswer">
+    <a (click)="closePopUpWrongAnswerMessage()">
+    <div class="opaque-layout">
+    </div>
+    <div class="wrong-answer-rectangle">
+      <img class="wrong-answer-image" src="assets/imgs/wrong-answer.png">
+      <p class="wrong">¡incorrecto!</p>
+    </div>
+    </a>
+  </div>
+  <div class= "start-again" *ngIf="startagain">
+    <a (click)="closeMenu()">
+      <div class="opaque-layout">
+      </div>
+    </a>
+    <a (click)="startAgain()">
+      <div class="start-again-rectangle">
+        <p class="start-again-message">Empezar de nuevo</p>
+      </div>
+    </a>
+  </div>
+</ion-content>

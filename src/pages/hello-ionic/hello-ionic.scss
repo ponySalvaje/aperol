@@ -1,0 +1,29 @@
+page-hello-ionic {
+    .background {
+        width: 100 wd;
+        height: 100 wd;
+        background-color: #ed7102;
+        .logo-aperol {
+            text-align: center;
+            padding-top: 15%;
+        }
+        .logo-perfect-serve {
+            text-align: center;
+            padding-top: 0%;
+            padding-bottom: 7%;
+        }
+        .footer {
+            text-align: center;
+            padding-bottom: 50px;
+            .btn-siguiente {
+                text-transform: uppercase;
+                font-size: 30px;
+                padding: 40px;
+                background-color: #ffffff;
+                color: #ed7102;
+                border-radius: 40px;
+                width: 450px;
+            }
+        }
+    }
+}

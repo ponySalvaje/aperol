@@ -1,0 +1,39 @@
+<ion-content>
+    <div class="background">
+      <a (click)="menuClicked()"><img class="menu-icon" src="assets/imgs/icon-menu.png"></a>
+      <div class="announcement">
+        <div class="score">
+          <p>¡has contestado correctamente 4 preguntas y lograste un total de 
+            <strong>100 puntos!</strong>
+          </p>
+        </div>
+        <div class="award">
+          <p>has ganado:</p>
+        </div>
+        <div class="prize">
+          <p>¡una copa aperol spritz!</p>
+        </div>
+      </div>
+        <img class="frame" src="assets/imgs/frame-aperitivo.png">
+        <div class="prize-image">
+          <img class="yellow-ellipse" src="assets/imgs/yellow-ellipse.png">
+          <img class="prize-glass-image" src="assets/imgs/prize-glass.png">
+        </div>
+    </div>
+    <div class="footer"></div>
+    <div class="after-announcement">
+        <hr>
+        <button (click)="finishQuiz()" ion-button class="btn-finalizar" clear>Finalizar</button>
+    </div>
+    <div class= "start-again" *ngIf="startagain">
+    <a (click)="closeMenu()">
+      <div class="opaque-layout">
+      </div>
+    </a>
+    <a (click)="startAgain()">
+      <div class="start-again-rectangle">
+        <p class="start-again-message">Empezar de nuevo</p>
+      </div>
+    </a>
+    </div>
+  </ion-content>

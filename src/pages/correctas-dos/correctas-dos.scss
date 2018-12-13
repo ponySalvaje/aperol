@@ -1,0 +1,132 @@
+page-correctas-dos {
+    .background {
+        text-align: center;
+        .menu-icon {
+            position: absolute;
+            width: 40px;
+            top: 20px;
+            left: 20px;
+        }
+        .announcement {
+            width: 100%;
+            height: 400px;
+            background-color: #ed7102;
+            .score {
+                margin-left: auto;
+                margin-right: auto;
+                padding: 80px;
+                padding-top: 125px;
+                padding-bottom: 10px;
+                text-transform: uppercase;
+                font-size: 25px;
+                color: #ffffff;
+                p {
+                    margin-top: 0px;
+                    margin-bottom: 0px;
+                }
+            }
+            .award {
+                margin-left: auto;
+                margin-right: auto;
+                text-transform: uppercase;
+                font-size: 50px;
+                font-weight: bolder;
+                color: #ffffff;
+                p {
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                }
+            }
+            .prize {
+                margin-left: auto;
+                margin-right: auto;
+                text-transform: uppercase;
+                font-size: 50px;
+                width: 500px;
+                font-weight: bolder;
+                color: #1f3064;
+                p {
+                    margin-top: 10px;
+                    margin-bottom: 0px;
+                }
+            }
+        }
+        .frame {
+            width: 100%;
+            height: 275px;
+            background-color: #ed7102;
+        }
+        .prize-image {
+            .yellow-ellipse {
+                position: absolute;
+                top: 500px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0px;
+                right: 0px;
+                width: 350px;
+                height: 350px;
+            }
+            .prize-coaster-image {
+                position: absolute;
+                top: 450px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0px;
+                right: 150px;
+                width: 400px;
+                height: 350px;
+            }
+        }
+    }
+    .footer {
+        text-align: center;
+        height: 225px;
+    }
+    .after-announcement {
+        text-align: center;
+        margin-top: 25px;
+        hr {
+            height: 2px;
+            background-color: #ed7102;
+        }
+        .btn-finalizar {
+            padding: 0;
+            border: none;
+            background: none;
+            margin-top: 0px;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: #ed7102;
+            background-color: #ffffff;
+        }
+    }
+    .start-again {
+        .opaque-layout {
+            position: fixed;
+            top: 0px;
+            left:0px;
+            width:100vw;
+            height:100vh;
+            background-color: #808080;
+            opacity: 0.6;
+        }
+        .start-again-rectangle {
+            position: fixed;
+            top: 25px;
+            left: 35px;
+            width: 250px;
+            height: 75px;
+            background-color: #ffffff;
+            border-radius: 50px;
+            text-align: center;
+            .start-again-message {
+                margin-top: 10px;
+                margin-bottom: 0px;
+                font-size: 20px;
+                padding: 15px;
+                color: #0e0b3f;
+            }
+        }
+    }
+}
